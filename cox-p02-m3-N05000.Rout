@@ -1,0 +1,47 @@
+
+R version 3.5.3 (2019-03-11) -- "Great Truth"
+Copyright (C) 2019 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin15.6.0 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+[Previously saved workspace restored]
+
+> source("child1.R")
+Loaded lars 1.2
+
+> 
+> # Settings
+> p.y <- 02
+> m.match <- 3
+> N <- 05000
+> 
+> source("child2.R")
+> 
+> # CLR Results
+> bhat1
+            Est         SE
+yy.V1 1.0350907 0.08902375
+yy.V2 0.4774855 0.07789081
+> 
+> # Resampling Results
+> bhat2
+           Est        SE1        SE2
+[1,] 1.0719586 0.06822380 0.06556119
+[2,] 0.5248276 0.06156107 0.06380896
+> 
+> proc.time()
+   user  system elapsed 
+ 25.262   0.726  26.002 
