@@ -17,6 +17,8 @@ Type 'demo()' for some demos, 'help()' for on-line help, or
 'help.start()' for an HTML browser interface to help.
 Type 'q()' to quit R.
 
+[Previously saved workspace restored]
+
 > library(MASS)
 > library(mvtnorm)
 > library(survival)
@@ -25,6 +27,7 @@ Type 'q()' to quit R.
 Loaded lars 1.2
 
 > 
+> # Load Functions
 > source("R/SIM.R")
 > source("R/FUN.R")
 > 
@@ -46,6 +49,7 @@ Loaded lars 1.2
 > n.t0 <- length(t0)
 > yy0 <- matrix(rep(c(0, 1), rep(p.y, 2)), ncol = 2)
 > 
+> # Simulate Data
 > ind.remove <- TRUE
 > count0 <- 0
 > while (ind.remove) {
@@ -92,4 +96,4 @@ yy.V2 0.3737518 0.1134395
 > 
 > proc.time()
    user  system elapsed 
- 19.349   0.485  19.828 
+ 19.644   0.459  20.114 

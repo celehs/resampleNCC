@@ -4,6 +4,7 @@ library(survival)
 library(glmpath)
 library(lars)
 
+# Load Functions
 source("R/SIM.R")
 source("R/FUN.R")
 
@@ -25,6 +26,7 @@ t0 <- seq(0.1, 1.5, by = 0.01)
 n.t0 <- length(t0)
 yy0 <- matrix(rep(c(0, 1), rep(p.y, 2)), ncol = 2)
 
+# Simulate Data
 ind.remove <- TRUE
 count0 <- 0
 while (ind.remove) {
