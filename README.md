@@ -6,7 +6,7 @@ This repository contains [R codes](R/FUN.R) that were used in the paper by Cai &
 
 Click [HERE](example.R) to see a simulated data example.  
 
-NOTE: An R package is under development and will be released in the near future. 
+**NOTE**: An R package is under development and will be released in the near future. 
 
 ## References
 
