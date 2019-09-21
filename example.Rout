@@ -29,8 +29,8 @@ Loaded lars 1.2
 > source("R/FUN.R")
 > 
 > set.seed(123)
-> N <- 05000
-> p.y <- 02
+> N <- 5000
+> p.y <- 2
 > gam.true <- c(1, 0.5)
 > myB.dist <- "exp"
 > yes.CLR <- TRUE
@@ -92,4 +92,4 @@ yy.V2 0.3737518 0.1134395
 > 
 > proc.time()
    user  system elapsed 
- 19.367   0.530  19.900 
+ 19.349   0.485  19.828 

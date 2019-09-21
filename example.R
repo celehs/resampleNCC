@@ -8,8 +8,8 @@ source("R/SIM.R")
 source("R/FUN.R")
 
 set.seed(123)
-N <- 05000
-p.y <- 02
+N <- 5000
+p.y <- 2
 gam.true <- c(1, 0.5)
 myB.dist <- "exp"
 yes.CLR <- TRUE
