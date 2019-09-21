@@ -14,7 +14,7 @@ gam.true <- c(1, 0.5)
 myB.dist <- "exp"
 yes.CLR <- TRUE
 yes.DepCen <- TRUE
-yes.Z <- FALSE
+yes.Z <- TRUE
 m.match <- 1
 a0.match <- c(0, 1)
 yes.regularize <- (p.y > length(gam.true))

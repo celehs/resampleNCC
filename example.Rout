@@ -35,7 +35,7 @@ Loaded lars 1.2
 > myB.dist <- "exp"
 > yes.CLR <- TRUE
 > yes.DepCen <- TRUE
-> yes.Z <- FALSE
+> yes.Z <- TRUE
 > m.match <- 1
 > a0.match <- c(0, 1)
 > yes.regularize <- (p.y > length(gam.true))
@@ -81,15 +81,15 @@ Loaded lars 1.2
 > # CLR Results
 > bhat1
             Est        SE
-yy.V1 0.8825974 0.1127199
-yy.V2 0.4082734 0.1010224
+yy.V1 1.0921642 0.1286621
+yy.V2 0.3737518 0.1134395
 > 
 > # Resampling Results
 > bhat2
            Est        SE1        SE2
-[1,] 0.8875038 0.08615038 0.09211188
-[2,] 0.4352614 0.09090530 0.09664515
+[1,] 1.0430553 0.07302369 0.07696405
+[2,] 0.3990445 0.06558009 0.07063376
 > 
 > proc.time()
    user  system elapsed 
- 16.149   0.528  16.677 
+ 19.367   0.530  19.900 
